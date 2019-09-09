@@ -1,0 +1,181 @@
+/* layout */
+#page {
+	display: grid;
+	width: 100%;
+	height: 100%;
+	grid-template-rows: 20% 70% 5% 5%;
+	grid-template-areas: "header"
+				   "control"
+				   "update"
+				   "footer";
+	background-color: #4874ac;
+	color: whitesmoke;
+}
+
+#header {
+	grid-area: header;
+
+}
+
+#control {
+	grid-area: control;
+	display: grid;
+	grid-gap: 7px;
+	grid-template-rows: 2fr 2fr 3fr 3fr 3fr 3fr;
+	grid-template-columns: 2fr 1fr;
+	grid-template-areas: "control-subhead trapimg"
+				   "levels trapimg"
+				   "activate activate"
+				   "feed feed"
+				   "refill refill"
+				   "release release";
+	margin: 0.5em;
+	padding: 0.5em;
+	background-color: #7a9cc7;
+}
+
+#control-subhead {
+	grid-area: control-subhead;
+}
+
+#levels {
+	grid-area: levels;
+}
+
+#trapimg {
+	grid-area: trapimg;
+}
+
+#activate {
+	grid-area: activate;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-areas: "act-inst act-btn";
+}
+
+#feed {
+	grid-area: feed;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-areas: "feed-inst feed-btn";
+}
+
+#refill {
+	grid-area: refill;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-areas: "ref-inst ref-btn";
+}
+
+#activate {
+	grid-area: activate;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-areas: "rel-inst rel-btn";
+}
+
+#release {
+	grid-area: release;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-areas: "rel-inst rel-btn";
+}
+
+#update {
+	grid-area: update;
+}
+
+#footer {
+	grid-area: footer;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #325178;
+}
+
+#update-btn {
+	border: 1px solid #5681b8;
+	border-radius: 5px;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	background-color: #7a9cc7;
+}
+#update-btn:hover {
+	cursor: pointer;
+	background-color: #a1b9d7;
+}
+
+/* formatting / classes*/
+.catpic {
+	border: 1px solid blue;
+	border-radius: 25px;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.centered {
+	text-align: center;
+}
+
+.ctrlbtn {
+	background-color: #c4deb0;
+	color: black;
+	border: 1px solid #9cb18c;
+	border-radius: 5px;
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+/*#7a9cc7
+
+#b0c4de	#deb0c4	#c4deb0
+#b0c4de	#b3b0de	#b0dbde
+http://www.color-hex.com/color/b0c4de
+*/
+
+.dense {
+	margin: 0;
+}
+
+.header {
+	margin-top: 0;
+	color: whitesmoke;
+}
+
+.header-data {
+	padding: 0 0.5em 0 0.5em;
+}
+
+.hidden {
+	display: none;
+}
+
+.instructions {
+	padding: 0 0.5em 0 0.5em;
+	margin: 0;
+}
+
+.lighttext {
+	color: whitesmoke;
+}
+
+.sectm {
+	border: 1px solid #5681b8;
+	border-radius: 5px;
+	box-shadow: 5px 5px 7px #5681b8;
+}
+
+.upbtn {
+	margin-top: 0.5em;;
+}
+
+body {
+	background-color: #4874ac;
+	margin: 0;
+	color: whitesmoke;
+}
+
+a {
+	color: #a1b9d7;
+}
